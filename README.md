@@ -1,6 +1,6 @@
 # YOLO Object Detection on Video
 
-This project implements YOLO (You Only Look Once) object detection on a video using Python and OpenCV. YOLO is a state-of-the-art, real-time object detection system that achieves high accuracy and fast processing times.
+This project implements YOLOv8 (You Only Look Once) object detection on a video using Python and OpenCV. YOLO is a state-of-the-art, real-time object detection system that achieves high accuracy and fast processing times.
 
 ## Installation
 
@@ -48,7 +48,7 @@ Here is the output video with object detection applied:
 
 ## Credits
 
-- [YOLOv5](https://github.com/ultralytics/yolov5) by Ultralytics for the YOLO implementation.
+- [YOLOv8](https://github.com/ultralytics) by Ultralytics for the YOLO implementation.
 - [OpenCV](https://opencv.org/) for image and video processing.
 - [cvzone](https://github.com/cvzone/cvzone) for drawing bounding boxes and text on images.
 

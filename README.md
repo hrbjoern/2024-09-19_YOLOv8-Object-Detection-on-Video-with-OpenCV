@@ -2,6 +2,8 @@
 
 This project implements YOLOv8 (You Only Look Once) object detection on a video using Python and OpenCV. YOLO is a state-of-the-art, real-time object detection system that achieves high accuracy and fast processing times.
 
+![Object Detection Demo](demo.gif)
+
 ## Installation
 
 1. Clone the repository:

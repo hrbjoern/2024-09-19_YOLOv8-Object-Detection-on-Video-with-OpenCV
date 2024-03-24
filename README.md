@@ -57,7 +57,3 @@ https://github.com/JoyKarmoker/YOLOv8-Object-Detection-on-Video-with-OpenCV/asse
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-This README template provides a clear overview of the project, installation instructions, usage guidelines, customization options, credits, and licensing information. Customize it according to your project's specific requirements and preferences.
-
-Feel free to reach out with any questions or suggestions!

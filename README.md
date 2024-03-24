@@ -36,10 +36,8 @@ This project implements YOLOv8 (You Only Look Once) object detection on a video 
 
 Here is the output video with object detection applied:
 
-<video width="640" height="480" controls>
-  <source src="output_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/JoyKarmoker/YOLOv8-Object-Detection-on-Video-with-OpenCV/assets/48152122/f11bcab0-8c67-4186-8eeb-57859a91e595
+
 
 ## Customization
 

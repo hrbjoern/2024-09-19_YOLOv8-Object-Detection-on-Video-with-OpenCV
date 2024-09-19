@@ -9,26 +9,29 @@ import os
 model = YOLO("../Yolo-Weights/yolov8l.pt")
 
 # Video capture
-cap = cv2.VideoCapture("../Videos/bikes.mp4")
+#cap = cv2.VideoCapture("../Videos/bikes.mp4")
+cap = cv2.VideoCapture("./Videos/Gurkenvideo_short.mp4")
 
 # Output folder for saving frames
 output_folder = "output_frames"
 os.makedirs(output_folder, exist_ok=True)
 
-classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
-              "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
-              "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
-              "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
-              "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
-              "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
-              "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
-              "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
-              "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
-              "teddy bear", "hair drier", "toothbrush"]
+classNames = ["person", "cucumber",  "skateboard"]
+# "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
+#               "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
+#               "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
+#               "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
+#               "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
+#               "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
+#               "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
+#               "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
+#               "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
+#               "teddy bear", "hair drier", "toothbrush"]
 
 while True:
     success, img = cap.read()
     if not success:
+        print("No video found or no more frames to read.")
         break  # Break out of the loop if there are no more frames to read
 
     # Perform object detection with YOLO
